@@ -1,0 +1,34 @@
+#app {
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: auto;
+    padding: 4rem;
+
+    & .main-container {
+        max-width: 33rem;
+        margin-left: auto;
+        
+    }
+}
+
+/*main .main-container {
+    max-width: 33rem;
+    margin-left: auto;
+} exemplo de como ficaria  se o navegador fosse mais antigo, teria que colocar dessa maneira em uma nova tag*/
+
+
+aside {
+    background-color: var(--surface-secondary);
+    padding: 4rem;
+
+ & .aside-container {
+    max-width: 31rem;
+    margin-right: auto;
+ }
+}
