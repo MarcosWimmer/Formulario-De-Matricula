@@ -60,7 +60,7 @@
                   id="medical info"
                   cols="30"
                   rows="5"
-                  placeholder="A criançapossui alguma condição médica que a escola deva estar ciente? (Se sim, expecifique)"
+                  placeholder="A criança possui alguma condição médica que a escola deva estar ciente? (Se sim, expecifique)"
                 ></textarea>
               </div>
 
@@ -115,14 +115,14 @@
                     id="street"
                     name="street"
                     value="Rua das Flores"
-                    disabled>
+                    disabled
+                  />
                 </div>
 
                 <div class="input-wrapper flex-1">
                   <label for="number">Número</label>
                   <input type="number" id="number" name="number" />
                 </div>
-
               </div>
 
               <div class="flex">
@@ -133,17 +133,45 @@
                     id="city"
                     name="city"
                     value="São Paulo"
-                    disabled>
+                    disabled
+                  />
                 </div>
 
                 <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
-                  <input type="text" id="state" name="state" disabled value="SP">
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    disabled
+                    value="SP"
+                  />
                 </div>
-
               </div>
+            </fieldset>
 
-              
+            <fieldset class="gardian">
+              <legend>Informações do responsável</legend>
+              <div class="input-wrapper">
+                <label for="gardian">Nome do responsável</label>
+                <input type="text" id="gardian" name="gardian" /><small
+                  >Principal responsável legal e contato de emergência</small
+                >
+              </div>
+<div class="input-wrapper">
+  <label for="phone">Telefone</label>
+  <input type="text" id="phone" name="phone" placeholder="(01) 2 3456-7890">
+</div>
+
+<div class="input-wrapper">
+  <label for="mail">Email</label>
+  <input type="email" name="mail" id="mail" required>
+  <div class="error">
+    <img src="assets/icons/alert-circle.svg" alt="ícone de alerta vermelho">
+    <span>Insira um e-mail válido</span>
+  </div>
+</div>
+
             </fieldset>
           </form>
         </div>
