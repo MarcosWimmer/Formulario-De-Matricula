@@ -7,6 +7,7 @@ input, textarea, select {
     padding: .75rem 1rem;
 
     font: var(--text);
+
 }
 
 label {

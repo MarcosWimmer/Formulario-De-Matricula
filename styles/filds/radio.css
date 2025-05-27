@@ -1,4 +1,4 @@
-label + .radio-wrapper {
+label+ .radio-wrapper {
   margin-top: 1rem;
 }
 
@@ -45,6 +45,7 @@ label + .radio-wrapper {
     & .radio-image {
       background-image: url(../../assets/icons/radio-hover.svg);
     }
+  }
 
     &:has(:checked) {
       border: 2px solid var(--stroke-highlight);
@@ -54,4 +55,4 @@ label + .radio-wrapper {
       }
     }
   }
-}
+
